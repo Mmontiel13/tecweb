@@ -38,6 +38,7 @@
         $c = &$a;<br>
     </p>
     <?php
+       unset($a, $b, $c);
        $a = "ManejadorSQL";
        $b = 'MySQL';
        $c = &$a;
@@ -65,7 +66,17 @@
         verificar la evolución del tipo de estas variables (imprime todos los componentes de los
         arreglo):
     </p>
+    <ul>
+        <li>$a = “PHP5”;</li>
+        <li>$z[] = &$a;</li>
+        <li>$b = “5a version de PHP”;</li>
+        <li>$c = $b*10;</li>
+        <li>$a .= $b;</li>
+        <li>$b *= $c;</li>
+        <li>$z[0] = “MySQL”;</li>
+    </ul>
     <?php
+        unset($a, $b, $c, $z);
         $a = "PHP5";
         echo 'Variable a: '.$a;
         echo '<br>';
