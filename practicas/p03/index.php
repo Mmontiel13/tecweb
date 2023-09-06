@@ -58,5 +58,36 @@
        echo 'Al cambiar el valor de la variable a y las otras 2 variables tener el valor de la misma tambien se modifico su valor';
        echo '<br>';
     ?>
+    <br><hr>
+    <h2> Ejercicio 3 </h2>
+    <p>
+        Muestra el contenido de cada variable inmediatamente después de cada asignación,
+        verificar la evolución del tipo de estas variables (imprime todos los componentes de los
+        arreglo):
+    </p>
+    <?php
+        $a = "PHP5";
+        echo 'Variable a: '.$a;
+        echo '<br>';
+        $z[] = &$a;
+        echo 'Variable z: ';
+        var_dump($z);
+        echo '<br>';
+        $b = "5a version de PHP";
+        echo 'Variable b: '.$b;
+        echo '<br>';
+        @$c = $b*10;
+        echo 'Variable c: '.$c;
+        echo '<br>';
+        $a .= $b;
+        echo 'Variable a: '.$a;
+        echo '<br>';
+        $b *= $c;
+        echo 'Variable b: '.$b;
+        echo '<br>';
+        $z[0] = "MySQL";
+        echo 'Variable z: ';
+        var_dump($z);
+    ?>
 </body>
 </html>
