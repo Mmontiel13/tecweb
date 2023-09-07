@@ -165,5 +165,107 @@
         <li>$b contendra el valor de 7 </li>
         <li>$c su valor final sera 9000 </li>
     </ul>
+
+    <br><hr>
+    <h2> Ejercicio 6</h2>
+    <p>
+    Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas
+    usando la función var_dump(<datos>).
+    Después investiga una función de PHP que permita transformar el valor booleano de $c y $e
+    en uno que se pueda mostrar con un echo:
+    </p>
+    <ul>
+    <li>$a = “0”;</li>
+    <li>$b = “TRUE”;</li>
+    <li>$c = FALSE;</li>
+    <li>$d = ($a OR $b);</li>
+    <li>$e = ($a AND $c);</li>
+    <li>$f = ($a XOR $b);</li>
+    </ul>
+    <?php
+        unset($a, $b, $c, $d, $e, $f);
+        $a = "0";
+        $b = "TRUE";
+        $c = "FALSE";
+        $d = ($a OR $b);
+        $e = ($a AND $c);
+        $f = ($a XOR $b); 
+
+        echo '$a = 0: ';
+        //Comprobando si es bool con la funcion is_bool()
+        if(is_bool($a)){
+            echo "La variable es booleano";
+        }
+        else{
+            echo "La variable No es Booleano";
+        }
+        //Mostrando variable con var_dupm()
+        echo "<br>";
+        var_dump($a);
+        echo "<br><br>";
+        //
+        echo '$b = "TRUE": ';
+        if(is_bool($b)){
+            echo "La variable es booleano";
+        }
+        else{
+            echo "La variable No es Booleano";
+        }
+        echo "<br>";
+        var_dump($b);
+        echo "<br><br>";
+        //
+        echo '$c = "FALSE": ';
+        if(is_bool($c)){
+            echo "La variable es booleano";
+        }
+        else{
+            echo "La variable No es Booleano";
+        }
+        echo "<br>";
+        var_dump($c);
+        echo "<br><br>";
+        //
+        echo '$d = ($a OR $b): ';
+        if(is_bool($d)){
+            echo "La variable es booleano";
+        }
+        else{
+            echo "La variable No es Booleano";
+        }
+        echo "<br>";
+        var_dump($d);
+        echo "<br><br>";
+        //
+        echo '$e = ($a AND $c): ';
+        if(is_bool($e)){
+            echo "La variable es booleano";
+        }
+        else{
+            echo "La variable No es Booleano";
+        }
+        echo "<br>";
+        var_dump($e);
+        echo "<br><br>";
+        //
+        echo '$f = ($a XOR $b): ';
+        if(is_bool($f)){
+            echo "La variable es booleano";
+        }
+        else{
+            echo "La variable No es Booleano";
+        }
+        echo "<br>";
+        var_dump($f);
+        echo "<br><br>";
+
+        // Convierte las variables $c y $e en enteros (0 o 1)
+        settype($c, "int");
+        settype($e, "int");
+        echo 'Monstrando $c con un echo: '.$c;
+        echo "<br>";
+        echo 'Monstrando $e con un echo: '.$e;
+        echo "<br>Debido a que son falsos se muestra 0";
+    ?>
 </body>
 </html>
