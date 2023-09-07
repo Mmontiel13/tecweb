@@ -267,5 +267,24 @@
         echo 'Monstrando $e con un echo: '.$e;
         echo "<br>Debido a que son falsos se muestra 0";
     ?>
+
+    <br><hr>
+    <h2> Ejercicio 7</h2>
+    <p>
+        Usando la variable predefinida $_SERVER, determina lo siguiente:
+    </p>
+    <ul>
+        <li>La versión de Apache y PHP</li>
+        <li>El nombre del sistema operativo (servidor)</li>
+        <li>El idioma del navegador (cliente)</li>
+    </ul>
+    <?php
+        $versionApache = $_SERVER['SERVER_SOFTWARE'];
+        echo "Versión de Apache y PHP: $versionApache <br><br>";
+        $sistemaOperativo = php_uname('s');
+        echo "Nombre del sistema operativo del servidor: $sistemaOperativo <br><br>";
+        $idiomaNavegador = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+        echo "Idioma del navegador cliente: $idiomaNavegador <br><br>";
+    ?>
 </body>
 </html>
