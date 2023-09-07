@@ -132,5 +132,38 @@
         $z[0] = "MySQL";
         echo 'Variable z: '.$GLOBALS['z'][0];
     ?>
+
+    <br><hr>
+    <h2> Ejercicio 5</h2>
+    <p>Dar el valor de las variables $a, $b, $c al final del siguiente script:</p>
+    <ul>
+        <li>$a = “7 personas”;</li>
+        <li>$b = (integer) $a;</li>
+        <li>$a = “9E3”;</li>
+        <li>$c = (double) $a;</li>
+    </ul>
+    <!--Comprobacion
+    <?php
+    
+        unset($a, $b, $c, $z);
+        $a = "7 personas";
+        echo 'Variable a: '.$a;
+        echo '<br>';
+        $b = (integer) $a;
+        echo 'Variable b: '.$b;
+        echo '<br>';
+        $a = "9E3";
+        echo 'Variable a: '.$a;
+        echo '<br>';
+        $c = (double) $a;
+        echo 'Variable c: '.$c;
+    
+    ?>
+    -->
+    <ul>
+        <li>$a contendra una cadena "93E"</li>
+        <li>$b contendra el valor de 7 </li>
+        <li>$c su valor final sera 9000 </li>
+    </ul>
 </body>
 </html>
