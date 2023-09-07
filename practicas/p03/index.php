@@ -29,6 +29,7 @@
         echo '<li>$_element1 es valida por que inicia con guion bajo.';
         echo '</ul>';
     ?>
+
     <br><hr>
     <h2> Ejercicio 2 </h2>
     <p>Proporcionar los valores de $a, $b, $c como sigue:</p>
@@ -59,6 +60,7 @@
        echo 'Al cambiar el valor de la variable a y las otras 2 variables tener el valor de la misma tambien se modifico su valor';
        echo '<br>';
     ?>
+
     <br><hr>
     <h2> Ejercicio 3 </h2>
     <p>
@@ -93,12 +95,42 @@
         $a .= $b;
         echo 'Variable a: '.$a;
         echo '<br>';
-        $b *= $c;
+        @$b *= $c;
         echo 'Variable b: '.$b;
         echo '<br>';
         $z[0] = "MySQL";
         echo 'Variable z: ';
         var_dump($z);
+    ?>
+
+    <br><hr>
+    <h2> Ejercicio 4</h2>
+    <p>
+    Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de
+    la matriz $GLOBALS o del modificador global de PHP.
+    </p>
+    <?php
+        unset($a, $b, $c, $z);
+        $a = "PHP5";
+        echo 'Variable a: '.$GLOBALS['a'];
+        echo '<br>';
+        $z[] = &$a;
+        echo 'Variable z: '.$GLOBALS['z'][0];
+        echo '<br>';
+        $b = "5a version de PHP";
+        echo 'Variable b: '.$GLOBALS['b'];
+        echo '<br>';
+        @$c = $b*10;
+        echo 'Variable c: '.$GLOBALS['c'];
+        echo '<br>';
+        $a .= $b;
+        echo 'Variable a: '.$GLOBALS['a'];
+        echo '<br>';
+        @$b *= $c;
+        echo 'Variable b: '.$GLOBALS['b'];
+        echo '<br>';
+        $z[0] = "MySQL";
+        echo 'Variable z: '.$GLOBALS['z'][0];
     ?>
 </body>
 </html>
