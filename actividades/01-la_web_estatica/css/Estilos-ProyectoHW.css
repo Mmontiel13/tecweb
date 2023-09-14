@@ -469,8 +469,17 @@ nav h1{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.item img{
-    width: 50%;
+.imgcul1{
+    /*width: 50%;*/
+	width: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+	min-height: 250px;
+}
+
+.imgcul2{
+	width: 40%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
