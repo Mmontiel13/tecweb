@@ -518,3 +518,54 @@ nav h1{
 .hidden{
     display: none;
 }
+
+/*Estilos para productos especificos*/
+
+/* Estilos para la imagen del producto */
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Borde ligero alrededor de la imagen */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido */
+}
+
+/* Estilos para la galería de imágenes adicionales */
+.galeria-imagenes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.galeria-imagenes img {
+    max-width: 100px; /* Tamaño máximo para las miniaturas de la galería */
+    height: auto;
+    margin-right: 10px; /* Espacio entre las miniaturas */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima de las miniaturas */
+    transition: transform 0.2s ease; /* Transición suave al hacer zoom en la miniatura */
+}
+
+.galeria-imagenes img:hover {
+    transform: scale(1.1); /* Hace zoom en la miniatura al pasar el cursor */
+}
+
+/* Estilos para los botones de acción */
+.acciones button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.acciones button:hover {
+    background-color: #2ecc71; /* Cambia el color de fondo al pasar el cursor */
+    color: #fff; /* Cambia el color del texto al pasar el cursor */
+}
+
+.container-specific{
+	margin-top: 100px;
+}
