@@ -3,6 +3,7 @@ const btnDmodeON = document.querySelector('#DmodeON');
 const btnDmodeOF = document.querySelector('#DmodeOF');
 const cPrincipal = document.querySelector('#cPrincipal');
 const body = document.querySelector('body');
+const containerSpecific = document.querySelector('.container-specific');
 
 btnDmode.addEventListener('click',() => {
 	body.classList.toggle('dark');
@@ -11,6 +12,8 @@ btnDmode.addEventListener('click',() => {
 	cPrincipal.classList.toggle('dark');
 	carrusel1.classList.toggle('fondoCarruselProducts');
 	carrusel1.classList.toggle('fondoCarruselProductsDark');
+    containerSpecific.classList.toggle('specificLight');
+    containerSpecific.classList.toggle('specificDark');
 })
 
 // Carrito
