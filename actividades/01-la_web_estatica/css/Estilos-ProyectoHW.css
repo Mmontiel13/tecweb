@@ -90,6 +90,21 @@ nav h1{
 	box-shadow: inset 0 0 25px #3a86ff, 0 0 25px #3a86ff;
 }
 
+/* Estilos para el modo Dark */
+.specificDark{
+	background: #74F0FF;
+}
+.specificDark p, ul, li{
+	color: #FFF;
+}
+.specificDark h4, h5{
+	color: #74FF8D;
+}
+
+.specificLight p, li, h4, h5{
+	color: #000;
+}
+
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     margin-left: 30px;
@@ -530,17 +545,16 @@ nav h1{
 
 /*Estilos para productos especificos NUEVA*/
 
-/* Estilos para la imagen del producto */
+
 .producto img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ddd; /* Borde ligero alrededor de la imagen */
-    border-radius: 5px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-/* Estilos para la galería de imágenes adicionales */
 .galeria-imagenes {
     display: flex;
     justify-content: space-between;
@@ -548,18 +562,18 @@ nav h1{
 }
 
 .galeria-imagenes img {
-    max-width: 100px; /* Tamaño máximo para las miniaturas de la galería */
+    max-width: 100px;
     height: auto;
-    margin-right: 10px; /* Espacio entre las miniaturas */
-    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima de las miniaturas */
-    transition: transform 0.2s ease; /* Transición suave al hacer zoom en la miniatura */
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .galeria-imagenes img:hover {
-    transform: scale(1.1); /* Hace zoom en la miniatura al pasar el cursor */
+    transform: scale(1.1);
 }
 
-/* Estilos para los botones de acción */
+
 .acciones button {
     margin-top: 20px;
     padding: 10px 20px;
@@ -571,8 +585,8 @@ nav h1{
 }
 
 .acciones button:hover {
-    background-color: #2ecc71; /* Cambia el color de fondo al pasar el cursor */
-    color: #fff; /* Cambia el color del texto al pasar el cursor */
+    background-color: #2ecc71;
+    color: #fff;
 }
 
 .container-specific{
