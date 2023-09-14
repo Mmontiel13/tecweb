@@ -546,47 +546,13 @@ nav h1{
 /*Estilos para productos especificos NUEVA*/
 
 
-.producto img {
+.imagen img {
     max-width: 100%;
     height: auto;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-}
-
-.galeria-imagenes {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.galeria-imagenes img {
-    max-width: 100px;
-    height: auto;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.galeria-imagenes img:hover {
-    transform: scale(1.1);
-}
-
-
-.acciones button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.acciones button:hover {
-    background-color: #2ecc71;
-    color: #fff;
 }
 
 .container-specific{
