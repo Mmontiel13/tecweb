@@ -13,15 +13,14 @@
 	<body>
       <h1>Formulario de productos</h1>
 
-      <form id="formularioProductos" action="set_producto.php" method="post" onsubmit="return validarFormulario()">
+      <form id="formularioProductos" action="" method="post" onsubmit="return validarFormulario()">
         <fieldset>
-          <legend>Información del producto</legend>
+          <legend>Información del producto a actualizar</legend>
 
           <ul>
-            <li><label for="form-name-producto">Nombre:</label> <input type="text" name="nombre_producto" id="form-name-producto" required maxlength="100"></li>
+          <li><label for="form-name-producto">Nombre:</label> <input type="text" name="nombre" id="form-name-producto" value="<?= !empty($_POST['nombre'])?$_POST['nombre']:$_GET['nombre'] ?>"></li>
             <li><label for="form-marca">Marca:</label>
-              <select name="marca_producto" id="form-marca" required>
-                <option value="">Seleccione una opción</option>
+              <select name="marca" id="form-marca" required>
                 <option value="HP">HP</option>
                 <option value="DELL">DELL</option>
                 <option value="LENOVO">LENOVO</option>
@@ -29,15 +28,15 @@
                 <option value="INTEL">INTEL</option>
               </select>
             </li>
-            <li><label for="form-model">Modelo:</label> <input type="text" name="modelo_producto" id="form-model" required pattern="^[a-zA-Z0-9 ]{1,25}$"></li>
-            <li><label for="form-precio">Precio:</label> <input type="text" name="precio_producto" id="form-precio" required min="99.99"></li>
-            <li><label for="form-detalles">Detalles:</label><br><textarea name="detalles_producto" rows="4" cols="60" id="form-detalles" placeholder="No más de 250 caracteres de longitud" maxlength="250"></textarea></li>
-            <li><label for="form-unidades">Unidades:</label> <input type="number" name="unidades_producto" id="form-unidades" required min="0"></li>
-            <li><label for="form-img">Imagen:</label> <input type="text" name="imagen_producto" id="form-img"></li>
+            <li><label for="form-model">Modelo:</label> <input type="text" name="modelo" id="form-model" value="<?= !empty($_POST['modelo'])?$_POST['modelo']:$_GET['modelo'] ?>"></li>
+            <li><label for="form-precio">Precio:</label> <input type="number" name="precio" id="form-precio" required min="99.99" value="<?= !empty($_POST['precio'])?$_POST['precio']:$_GET['precio'] ?>"></li>
+            <li><label for="form-detalles">Detalles:</label><input type="text" name="detalles" id="form-detalles" value="<?= !empty($_POST['detalles'])?$_POST['detalles']:$_GET['detalles'] ?>"></li>
+            <li><label for="form-unidades">Unidades:</label> <input type="number" name="unidades" id="form-unidades" value="<?= !empty($_POST['unidades'])?$_POST['unidades']:$_GET['unidades'] ?>"></li>
+            <li><label for="form-img">Imagen:</label> <input type="text" name="imagen" id="form-img" value="<?= !empty($_POST['imagen'])?$_POST['imagen']:$_GET['imagen'] ?>"></li>
           </ul>
         </fieldset>
         <p>
-          <input type="submit" value="Agregar Producto" name="addProduct">
+          <input type="submit" value="Actualizar producto" name="addProduct">
         </p>
       </form>
       <script>
